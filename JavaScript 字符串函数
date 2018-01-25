@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 字符串函数</title>
+    <script>
+        window.onload=function (ev) {
+            var str="Hello world!"
+            //字符方法
+            // 1.charAt() 方法可返回指定位置的字符(e)
+            var charat=str.charAt(1);
+            console.log(charat);
+            //2.返回指定字符的 Unicode 编码
+            var charcodeat=str.charCodeAt(1);
+            console.log(charcodeat);
+            //3.可接受一个指定的 Unicode 值，然后返回一个字符串fromcharcode(,,)
+            var u=String.fromCharCode(114,112,101,65);
+            console.log(u);
+
+            //位置方法未找到为-1
+            //1.首次出现的位置
+            var indexof=str.indexOf("llo");
+            console.log(indexof);
+            //2.最后出现的位置
+            var lastindexof=str.lastIndexOf("llo");
+            console.log(lastindexof);
+
+            //匹配方法
+            //match("");
+            // str.match("hello");==hello||null
+            //str.match(正则表达式)
+            //search()检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。
+            //str.search(/hello/)=nan||数字
+            //replace()替换
+            //str.replace("hello","hi")
+            //split()分割字符
+            //var arr=str.split("e");
+
+            //操作方法
+            //拼接方法concat()
+            //str.concat("0.0","12")
+            //截取方法
+            // slice(从什么地方选取，从什么地方结束选取)已有的数组中返回选定的元素
+            // str.slice(2);
+            // str.slice(2,4);
+            // substring()和slice()用法一样，用于字符串
+            // substr(从哪里开始，选取几个)
+            //空格方法
+            // trim()清除两边的空格
+            // trimLeft()清除前置的空格
+            // trimRight()清除后缀的空格
+            //比较方法localeCompare()
+            //var a=str.localeCompare("Hello world!")
+            //console.log(a)
+
+            //编码方式
+            //字符串常规编码和解码
+            //函数可对字符串进行编码，这样就可以在所有的计算机上读取该字符串
+            //escape();
+            //函数可对通过 escape() 编码的字符串进行解码。
+            //unescape()
+            //URI字符串编码和解码encodeURI
+            //encodeURI()
+            //URI组件解码
+            // encodeURIComponent()
+            // URI组件编码
+            // decodeURIComponent()
+
+            //转换方法
+            //转为大写
+            str.toUpperCase();
+            //本地的
+            str.toLocaleLowerCase();
+            //转换小写
+            str.toLowerCase();
+            //本地的方式
+            str.toLocaleLowerCase();
+            //代码转换js动态格式化html
+
+
+
+
+
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

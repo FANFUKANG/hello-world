@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Window</title>
+    <script>
+        window.onload=function () {
+            //导航器对象navigator
+            //1.返回浏览器代码名
+            document.write(navigator.appCodeName + "<br/>");
+            //2.返回浏览器名称
+            document.write(navigator.appName + "<br/>");
+            //3.返回浏览器的平台和版本信息
+            document.write(navigator.appVersion + "<br/>");
+            //4.判断cookie是否启用
+            document.write(navigator.cookieEnabled + "<br/>");
+            //5.返回浏览器操作系统
+            document.write(navigator.platform + "<br/>");
+            //6.返回客户机发送服务器的user Agent用户代理头的值。
+            document.write(navigator.userAgent + "<br/>");
+
+            //显示器对象screen
+            //1.显示显示器的可用高度
+            document.write(screen.availHeight + "<br/>");
+            //2.显示显示器的可用宽度
+            document.write(screen.availWidth + "<br/>");
+            //3.屏幕的像素高度
+            document.write(screen.height + "<br/>");
+            //4.屏幕的像素宽度
+            document.write(screen.width + "<br/>");
+            //5.屏幕的显示像素位数
+            document.write(screen.colorDepth + "<br/>");
+
+            //历史对象history
+            //1.返回前一个URL
+            //history.back();
+            //2.返回下一个URL
+            //history.forward();
+            //3.返回某个具体页面后退一格- 0 前进两个+
+            //history.go(-1)
+
+            //位置对象location
+            //1.设置或返回地址#后面的内容，包括#
+            document.write(location.hash + "<br/>");
+            //2.设置或返回主机名或当前地址的端口号
+            document.write(location.host + "<br/>");
+            //3.设置或返回当前URL的主机名
+            document.write(location.hostname + "<br/>");
+            //4.设置或返回完整的URL
+            document.write(location.href + "<br/>");
+            //5.设置或返回URl的路径部分
+            document.write(location.pathname + "<br/>");
+            //6.设置或返回当前URL的端口号
+            document.write(location.port + "<br/>");
+            //7.设置或返回当前的URL的协议
+            document.write(location.protocol + "<br/>");
+            //8.设置或返回从?开始的URL
+            document.write(location.search + "<br/>");
+            //9.打开新的文档
+            //location.assign("http://www.baidu.com");
+            //10.重新加载文档
+            // location.reload();
+            //11.用新的文档替换当前文档
+            //location.replace("http://www.baidu.com");
+            //文档对象document
+            //1.可返回对文档中所有 Anchor （锚点）对象的引用
+            var a= document.anchors;
+            //2.返回对文档中所有 Image 对象的引用
+            var b=document.images;
+            //3.返回对文档中所有 Area 和 Link 对象的引用
+            var c=document.links;
+            //4.可返回对文档中所有 Form 对象的引用
+            var d=document.forms;
+            //5.设置或返回cookie
+            document.write(document.cookie + "<br/>");
+            //6.返回当前文档的域名
+            document.write(document.domain + "<br/>");
+            //7.返回载入当前文档的文档的 URL
+            document.write(document.referrer + "<br/>");
+            //8.返回当前文档的内容
+            document.write(document.title + "<br/>");
+            //9.返回当前文档的URL
+            document.write(document.URL + "<br/>");
+            //10.打开一个新的文档
+            //document.open("");
+            //11.关闭文档
+            //document.close();
+            //12.填写文本
+            document.write("123456"+ "<br/>");
+            //13.填写文本可换行
+            document.writeln("111","123","125","145");
+
+            //窗口控制
+            //1.相对于窗口当前坐标移动moveBy(要把窗口右移的像素数,要把窗口下移的像素数)
+            //window.moveBy(200,200);
+            //2.把内容滚动到指定的坐标moveTo(窗口新位置的 x 坐标,窗口新位置的 y 坐标)
+            //window.moveTo(200,200);
+            //3.把内容滚动指定的像素数scrollBy（向右滚动的像素数，向下滚动的像素数）
+            //window.scrollBy(200,200)
+            //4.把内容滚动到指定的坐标scrollTo(向右滚动的像素数，向下滚动的像素数)
+            //window.scrollTo(200,200)
+            //5.控制窗口大小resizeBy(width,height)（要使窗口宽度增加的像素数。可以是正、负数值；要使窗口高度增加的像素数。可以是正、负数值。）
+            //window.resizeBy(-100,-100);
+            //6.把窗口大小调整为指定的宽度和高度resizeTo(width,height)(想要调整到的窗口的宽度。以像素计;想要调整到的窗口的高度。以像素计)
+            //window.scrollTo(500,500);
+
+            //焦点控制
+            //1.得到焦点
+            //xx.focus();
+            //2.失去焦点
+            //xx.blur();
+
+            //打开窗口
+            //window.open();
+            //关闭窗口
+            //window.close();
+
+            //定时器setTimeout在执行代码前需等待的毫秒数。
+            //var t=setTimeout(function () {
+
+            //},5000)
+            //清除定时器setTimeout，clearTimeout
+            //clearTimeout(t);
+
+            //按照指定的周期（以毫秒计）来调用函数或计算表达式setInterval
+            //var t=setInterval(function () {
+
+            //},5000)
+            //清除setInterval 的clearInterval
+            //clearInterval(t);
+
+            //对话框
+            //alert("123456789!")
+            //显示一个确认器
+            // var t=confirm("Yes!!!");
+            // if (t==false){
+            //
+            // }
+            // else {
+            //
+            // }
+            //prompt显示一个带输入框的弹出框
+            // var name=prompt("请输入您的名字","Bill Gates")
+            // if (name!=null && name!="")
+            // {
+            //     document.write("你好，" + name + "！今天过得好吗？")
+            // }
+
+            //设置或返回窗口状态栏中的默认文本
+            //window.defaultStatus="hello world!";
+            // 属性是一个可读可写的字符串，声明了要在窗口状态栏中显示的一条消息。通常显示这条消息的时间是有限的，直到其他的消息将它覆盖，或者用户把鼠标移动到窗口的其他区域为止。当擦除了 status 声明的消息时，状态栏要么恢复为它默认的空白状态，要么是再次显示出属性 defaultStatus 声明的默认消息。
+            //window.status="hello world!";
+            //窗口位置
+            //1.IE
+            //窗口的top和left
+            var top=window.screenTop;
+            var left=window.screenLeft;
+            //文档的top和left
+            var documenttop=document.body.scrollTop;//document.documentElement.scrollTop
+            var documentleft=document.body.scrollLeft;//document.documentElement.scrollLeft
+            //!IE
+            //窗口的top和left
+            var top=window.screenX;
+            var left=window.screenY;
+            //滚动的值
+            var pageXOffset=window.pageXOffset;
+            var pageY0ffset=window.pageYOffset;
+            //FF
+            // scrollWidth：对象的实际内容的宽度，不包边线宽度，会随对象中内容超过可视区后而变大。
+            // clientWidth：对象内容的可视区的宽度，不包滚动条等边线，会随对象显示大小的变化而改变。
+            // offsetWidth：对象整体的实际宽度，包滚动条等边线，会随对象显示大小的变化而改变。
+            var width=window.offsetWidth;
+            var height=window.offsetHeight;
+            //详情https://zhidao.baidu.com/question/535778314.html
+            var outerwidth=window.outerWidth;
+            var outerHeight=window.outerHeight;
+
+            //其他
+            //opener属性是一个可读可写的属性，可返回对创建该窗口的 Window 对象的引用。就是在打开的页面修改它上级页面对象
+            // var mywindow= window.open("","",'width=200,height=100');
+            // var win=mywindow.opener;
+            // win.document.write("找找我的位置，你就明白了"+"<br/>");
+            //closed返回ture或这false,主要判断窗口状态
+            // var mywindow= window.open("","",'width=200,height=100');
+            // var one=mywindow.closed;
+            // if (one==false){
+            //     mywindow.close();
+            // }
+            //name返回窗口名称
+            //console.log(window.name);
+            //self属性可返回对窗口自身的只读引用。等价于 Window 属性。
+            var self=window.self;
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Dom</title>
+    <script>
+        window.onload= function () {
+            //获取节点
+            //1.获取节点的方法
+            //1.1.根据ID获取节点getElementById
+            //var one=document.getElementById("one");
+            //1.2.根据name获取节点getElementByName
+            //var one=document.getElementsByName("one");
+            //1.3.根据class获取节点getElementClassName
+            // var one=document.getElementsByClassName("one");
+            //1.4.根据tag标签获取节点<div> <input> <body> getElementByTagName
+            //var one=document.getElementsByTagName("body");
+            //2节点指针
+            //2.1.获取第一个子节点firstChild
+            //var one = document.getElementsByTagName("body")[0].firstChild;
+            //2.2.获取元素最后一个节点lastChild
+            //var one=document.getElementsByTagName("body")[0].lastChild;
+            //2.3.获取子节点列表childNodes
+            //var one=document.getElementsByTagName("body")[0].childNodes;
+            //2.4.一直节点上一个兄弟节点previousSibling
+            //var one=document.getElementsByTagName("div")[0].previousSibling;
+            //2.5.已知节点的下一个兄弟节点nestSibling
+            //var one=document.getElementsByTagName("div")[0].nextSibling;
+            //2.6.获取一直节点的父节点
+            //var one=document.getElementsByTagName("div")[0].parentNode;
+
+            //节点操作
+            //1.创建节点
+            //1.1创建元素节点
+            //var one = document.createElement("input");
+            //1.2创建属性节点
+            //var two = document.createAttribute("id");
+            //对属性节点赋值
+            //two.value = "six";
+            //添加元素节点及属性节点
+            //document.getElementsByTagName("div")[0].appendChild(one).setAttributeNode(two);
+            //1.3创建文本节点
+            // var three=document.createTextNode("文本节点")
+            // document.getElementsByTagName("div")[0].appendChild(three);
+            //2.插入节点
+            //2.1已知元素之内添加元素节点appendChild
+            // document.getElementsByTagName("div")[0].appendChild(元素节点)
+            //2.2已知元素之内的某一个元素之前插入一个子节点insertBefore
+            //var four=document.getElementsByTagName("div")[0]
+            //four.insertBefore(one,four.childNodes[0])
+            //3.元素替换replaceChild
+            //var four=document.getElementsByTagName("div")[0].replaceChild(three,document.getElementsByTagName("div")[0].childNodes[0])
+            //4.复制节点cloneNode
+            //var one=document.getElementsByTagName("div")[0].cloneNode(true);
+            //5.删除节点removeChild
+            //document.getElementsByTagName("body")[0].removeChild(document.getElementsByTagName("div")[0]);
+
+
+            //属性操作
+            //1.获取属性getAttribute
+            //document.getElementsByTagName("div")[0].getAttribute("id");
+            //2.设置属性setAttribute
+            //document.getElementsByTagName("div")[0].setAttribute("id","001");
+            //3.删除属性removeAttribute
+            //document.getElementsByTagName("div")[0].removeAttribute("id");
+
+
+            //文本操作
+            //1.从offset指定位置插入string（offset设置 0问1本2内3容4）insertData
+            //document.getElementsByTagName("div")[0].childNodes[0].insertData(4,"11111");
+            //2.将文本内容插入文本节点的末尾处appendData
+            //document.getElementsByTagName("div")[0].childNodes[0].appendData("123456789");
+            //3.从offset删除count个字符deleteData
+            //document.getElementsByTagName("div")[0].childNodes[0].deleteData(3,1);//(offset,count)
+            //4.从offset起将文本节点的内容用什么替换replaceData
+            //document.getElementsByTagName("div")[0].childNodes[0].replaceData(3,1,"1");
+            //5.从offset起将文本节点的内容分为两部分splitTest
+            //var b=document.getElementById("one").childNodes[0].splitTest(3);
+            //6.返回由offset起的count个节点
+            // var str="Hello world!"
+            // document.write(str.substring(3));
+        }
+
+    </script>
+</head>
+<body>
+<div id="one" name="one" class="one"   ></div>
+<div id="two" name="two" class="two"  ></div>
+<div id="three" name="three" class="three"  ></div>
+<div id="four" name="four" class="four"   ></div>
+<div id="five" name="five" class="five"   ></div>
+</body>
+</html>
